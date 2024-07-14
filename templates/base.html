@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Web Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for("static",filename="style.css")}}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts.js"></script>
+</head>
+<body>
+    <script>
+        function toggleMobileMenu(){
+            document.getElementById("menu").classList.toggle("active");
+        }      
+    </script>
+    <header>
+        <a href="#" class="logo-holder">
+            <div class="logo"><img src="{{url_for("static",filename="./imgs/juve.png")}}" width="50%">PORTFOLIO</div>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="button">Contact Me</a>
+                </li>
+            </ul>
+            <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+                  </svg>
+                  
+            </a>
+
+        </nav>
+    </header>
+    <main>
+        <section class="hero container">
+            <div class="hero-blue">
+                <div>
+                    <h1><small>Hi I'm</small>
+                    Jaganath</h1>
+                    <p>
+                       A SoftWare Engineering aspirant from India
+                       ,whos passionate about learning and creating stuffs.
+                       <span>I'm interested in AI topics and likes to automate things. 
+                        I usually prefer Python but open for development in any of the languages.
+                       </span>     
+                    </p>
+                    <div class="call-to-action">
+                        <a href="{{url_for("static",filename="./imgs/Jaganath_resume2024.pdf")}}" class="button black">View Resume</a>
+                        <a href="mailto:jaganathbabu025@gmail.com" class="button white">Mail Me</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/jagan1508">
+                            <img src="{{url_for("static",filename="./imgs/github.png")}}" alt="GitHub" width="48">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jaganath-b-61a156215/">
+                            <img src="{{url_for("static",filename="./imgs/linkedin.png")}}" alt="Linkedin" width="48">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-yellow">
+                <img src="{{url_for("static",filename="./imgs/port_pic.png")}}"
+                alt="Jaganath" width="10%"/>
+            </div>
+        </section>
+        <section class="logos container">
+            <div class="marquee">
+                <div class="track">
+                    <img src="{{url_for("static",filename="./imgs/html.png")}}" alt="HTML" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/css.png")}}" alt="css" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/javascript.png")}}" alt="JS" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/python.png")}}" alt="python" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/cpp.png")}}" alt="cpp" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/vscode.png")}}" alt="vscode" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/openai.png")}}" alt="openai" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/neo4j.png")}}" alt="neo4j" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/mysql.png")}}" alt="mysql" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/flask.png")}}" alt="flask" width="128"/>
+
+                    <img src="{{url_for("static",filename="./imgs/html.png")}}" alt="HTML" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/css.png")}}" alt="css" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/javascript.png")}}" alt="JS" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/python.png")}}" alt="python" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/cpp.png")}}" alt="cpp" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/vscode.png")}}" alt="vscode" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/openai.png")}}" alt="openai" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/neo4j.png")}}" alt="neo4j" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/mysql.png")}}" alt="mysql" width="128"/>
+                    <img src="{{url_for("static",filename="./imgs/flask.png")}}" alt="flask" width="128"/>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills container">
+            <h2>
+                 <small>A bit about</small><br>Myself
+            </h2>
+            <div class="holder-blue">
+                <div class="left-column">
+                    <h3>Programming languagues I know</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>C</li>
+                    </ul>
+                    <h3>For web, I use</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Flask</li>
+                    </ul>
+                    <h3>For UI/UX design, I use</h3>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Canva</li>
+                        <li>Adobe Photoshop</li>
+                    </ul>
+                    
+
+                </div>
+                <div class="right-column">
+                    <h3>A little introduction...</h3>
+                    <p>Hi I'm <b>Jaganath</b>. Currently, I am a student at <b>sastra university, thanjavur</b> pursuing <b>B.tech</b> n <b>Computer Science and Business Systems</b>. I am passionate about 
+                    technologies and major leapthroughs in them. I am enthusiastic about <b>Artificial Intelligence</b> and believe in their usage in our everyday life, so that we can <b>automate</b> repetitive tasks.
+                 At the same time, I am a strong advocate in <b>creative thinking</b> and believe never to let AI do our creative work. So, I can say that I am a <b>creative thinker</b> and a <b>problem-solver</b>
+                <br><br>I am a <b>passionate learner </b>, who flurishes in a creative environment. I usually use <b>Python</b> and its frameworks for my projects but open to explore new areas too.</p>
+                </div>
+            </div>
+        </section>
+        <section class="work-experience container">
+            <h2>
+                <small>Recent</small><br>
+                Work Experience
+            </h2>
+            <div class="items-load"> 
+            <div class="jobs">
+                    <article>
+                        <figure>
+                            <div>
+                                <img src="{{url_for("static",filename="./imgs/zoho.jpeg")}}" alt="workplace-1" width="100%"/>
+                                <figcaption>Summer Internship @ Zoho</figcaption>
+                            </div>
+                        </figure>
+                        <h3>Intern, <small>Zoho Corp</small></h3>
+                        <div>June 2024- August 2024</div>
+                        <p> Here I worked under Site24x7 Project , where I used techniques like Webscraping,and
+                            python datascience methods to get and cleanse the api data from the website.
+                            Using that , I automated knowledge graph generation ( Neo4js ) using prompt
+                            engineering with LangChain , to create a RAG chat-bot application .</p>
+                    </article>
+                </div>
+            <div class="load-items">
+                <div class="load-text"><h3><small>More</small><br>Yet to come</h3></div>
+                <div class="load"> </div>
+            </div>            
+            </div>
+
+        </section>
+        <section id="projects" class="bento container">
+            <h2>
+                <small>
+                    My
+                </small><br>
+                Projects
+            </h2>
+            <div class="bento-grid">
+                <a href="https://github.com/jagan1508/brain_mri_tumor_detection" class="bento-item">
+                    <img src="{{url_for("static",filename="./imgs/braintumor.jpg")}}" alt="proj1" width="100%"/><details>
+                        <summary> Brain tumor detection using MRI Images</summary>
+                    <p>Used pytorch,matplotlib and numpy to constructed a CNN having Restnet-18 architecture
+                        that analyzed the MRI scans of healthy and tumor images to do binary classification . Attained a accuracy of 93.4 % on test dataset.</p></details>
+                </a>
+                <a href="#" class="bento-item"><img src="{{url_for("static",filename="./imgs/webpage-port.png")}}" alt="proj2" width="100%"/><details>
+                    <summary> Portfolio Website</summary>
+                    <p>Built a portfolio website for my personal use using HTML,CSS and Javascript for frontend and used flask for the 
+                        backend. In here I have built a chatbot using mixtral model and uses vector database(chroma). For embeddings, I have used FlagEmbeddings(BAAI/bge-base-en-v1.5),
+                        from huggingface to build a rag-based chatbot.
+                    </p></details></a>
+                <a href="https://github.com/jagan1508/site24x7_API_Chatbot_Using_RAG" class="bento-item"><img src="{{url_for("static",filename="./imgs/site24x7.png")}}" alt="proj3" width="100%"/><details>
+                    <summary> Site24x7 API Bot</summary>
+                    <p>In this project, I have built a chatbot using Gradio which gets the api key and query from the user.
+                        Using those inputs, I have built a knowledge graph using neo4j and langchain using methods like prompt engineering,
+                        After building the graph, I have used GraphRAG to infer knowledge from it and display the result on the user interface.  
+                    </p></details></a>
+                <a href="https://www.figma.com/design/3HEAgsreaF1Wcn295nrW3Q/movie-ticket-reservation-app-wireframe?node-id=311-53&t=aAzabEdQe5H5fzc3-1" class="bento-item"><img src="{{url_for("static",filename="./imgs/movie_ticket_reserv.png")}}" alt="img4" width="100%"/><details>
+                    <summary> UX design project</summary>
+                    <p>Used figma to create a low fidility prototypr(wireframe) and high fidility prototype of a movie ticket reservation
+                        application. Here I have done extensive User research by creating personas, market insights and various UX research activities to 
+                        understand user's painpoint while reserving tickets for a movie.
+                    </p></details></a>
+            </div>
+        </section>
+        <section class ="chatbot container">
+            <h2>
+                <small>Talk to me</small><br>
+                Chatbot
+            </h2>
+            <div class="chatbot-blue">
+                <div class="chat-info">
+                    <h3>AI Chatbot</h3>
+                        <p>I've put together a chatbot here which knows all my skills,
+                            work experience and has a copy of my Resume. You can use it to ask questions about me to get a better idea of who
+                            I am and what I've done.
+                        </p>
+                        <p>You can also download my resume here if you 
+                            want to take a look at it. I'm currently looking 
+                            foe new opportunities , so if you think I'd be a good fit , please get in touch :) </p>
+                        <a href="{{url_for("static",filename="./imgs/Jaganath_resume2024.pdf")}}" class="button black">Download Resume</a>
+                </div>
+                
+                <div class="chat-box">
+                    <div class="scroll-area">
+                        {% block scroll%}{% endblock %}
+                    </div>
+                    <form class="chat-message" id="chat-message" method="POST" action="/">
+                      <input type="text" name="message" id="message-input" placeholder="Hey Jagan, what skills are you best at ?">
+                      <button class="button black" id="send-message">Send</button>  
+                    </form>
+                </div> 
+            </div>
+        </section>
+        <section id ="contact" class="contact container">
+            <h2><small>These are my</small><br>Contact Details</h2>
+            <div class="contact-blue">
+                <ul>
+                    <li>
+                        <h3>
+                            Email  <small><a href="mailto:jaganathbabu025@gmail.com" class="contact-mail" >jaganathbabu0252gmail.com</a></small>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            Phone  <small><a href="tel:+919362246522">+91 9361146522</a></small>
+                        </h3>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+    </main>
+    <script>
+        $(document).ready(function() {
+            function scrollToBottom() {
+                var chatLog = $('.scroll-area');
+                chatLog.scrollTop(chatLog.prop("scrollHeight"));
+            }
+            $('#chat-message').on('submit', function(event) {
+                event.preventDefault();
+                var userMessage = $('#message-input').val();
+                $('#message-input').val('');
+                $('#message-input').addClass('spinner-input');
+                $('#message-input').attr('placeholder', 'I am getting your answer...');
+                $.ajax({
+                    url: '/send_message',
+                    method: 'POST',
+                    data: { message: userMessage },
+                    success: function(response) {
+                        var userMessageHtml = '<li class="fade-in"><span class="avatar user">User</span><div class="message">' + response.user_message + '</div></li>';
+                        var botResponseHtml = '<li class="fade-in"><span class="avatar bot">AI</span><div class="message">' + response.bot_response + '</div></li>';
+                        $('#chat-log').append(userMessageHtml);
+                        $('#chat-log').append(botResponseHtml);
+                        scrollToBottom();
+                    },
+                    complete: function(){
+                        $('#message-input').val('');
+                        $('#message-input').removeClass('spinner-input');
+                        $('#message-input').attr('placeholder', 'Ask me any questions about Jaganath');
+                    }
+                });
+            });
+        });
+        </script>
+
+</body>
+</html>

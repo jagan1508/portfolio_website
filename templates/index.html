@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+
+
+{%block scroll%}
+
+<ul id="chat-log">
+
+    <li>  
+    <span class="avatar user">User</span>
+    <div class="message">
+        I have a question to ask you about this 
+        resume
+    </div></li>
+    <li>
+     <span class="avatar bot">AI</span>
+     <div class="message">
+        Yes, I'm a friendly chatbot who can answer questions about Jaganath's Resume . 
+        What is your question ?
+     </div></li>
+     {%for msg in messages%}
+     <li>
+        <span class="avatar user">User</span>
+        <div class="message">
+            {{msg[0]}}
+        </div></li>
+        <li>   
+        <span class="avatar bot">AI</span>
+        <div class="message">
+            {{msg[1]}}
+        </div></li>
+     {% endfor %}
+ </ul>
+{%endblock%}
