@@ -26,7 +26,7 @@ def chatbot_response(query):
     nest_asyncio.apply()
 
     def load_or_parse_data():
-        data_file = ".\python_rag\data\parsed_data.pkl"
+        data_file = "python_rag\data\parsed_data.pkl"
 
         if os.path.exists(data_file):
             # Load the parsed data from the file
