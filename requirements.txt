@@ -231,4 +231,6 @@ wsproto==1.2.0
 yarg==0.1.9
 yarl==1.9.4
 zipp==3.19.2
-gunicorn
+gunicorn==22.0.0
+gevent==24.2.1
+greenlet==2.0.2
