@@ -6,7 +6,7 @@ def chatbot_response(query):
         result_type="markdown", 
         verbose=True
     )
-    groq_api_key="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"
+    groq_api_key="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"
     llamaparse_api_key="llx-juiHEGjTVNPzgpcPIVxg8EQR81OdNSkH71uHqH3eK0GeDneM"
 
     from llama_parse import LlamaParse
